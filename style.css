@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Kaisei Opti", serif;
+}
+
+main {
+  background-image: linear-gradient(to bottom right, #ddd6fe, #f9a8d4);
+}
+
+li {
+  list-style: none;
+}
+
+/* header/navbar */
+
+.header {
+  background-color: #3b82f6;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  display: flex;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color: #dbeafe;
+  padding-right: 15px;
+  margin-left: 5px;
+}
+
+a:hover {
+  color: #1e3a8a;
+}
+
+.logo img {
+  max-width: 107px;
+  height: auto;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.navbar {
+  font-size: 20px;
+}
+
+/* art section */
+
+#myart {
+  padding-top: 100px;
+}
+
+.art {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#myart img {
+  max-width: 100%;
+  border-style: double;
+  border-width: 5px;
+  border-radius: 8px;
+  border-color: #c4b5fd;
+}
+
+#myart li {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* pricing/contact */
+
+form {
+  border-style: double;
+  border-width: 5px;
+  border-radius: 8px;
+  border-color: #c4b5fd;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+textarea {
+  width: 60%;
+  height: 200px;
+  border-radius: 5px;
+  background-color: #dbeafe;
+  opacity: 0.7;
+  border-color: #c4b5fd;
+  border-width: 4px;
+  color: black;
+}
+
+input {
+  border-radius: 5px;
+  border: 0;
+  background-color: #dbeafe;
+  color: black;
+  border-color: #c4b5fd;
+  border-width: 4px;
+}
+
+::placeholder {
+  color: black;
+  opacity: 0.7;
+}
+
+/* button stuff */
+
+.btn {
+  background-color: #f472b6;
+  border: 0;
+
+  border-radius: 10px;
+  width: 70px;
+  height: 25px;
+}
+
+button:hover {
+  background-color: #c4b5fd;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #3b82f6;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#footer img {
+  width: 30px;
+}
+
+#footer a {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#footer p {
+  color: #dbeafe;
+  margin-bottom: 10px;
+}
+
+/* extra/media query */
+
+@media (min-width: 768px) {
+  /* art */
+
+  .art ul {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  /* form */
+  form {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
